@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;900&amp;family=Public+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#FFFFFF;color:#173A63;font-family:'Public Sans',system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:#1D67C9;text-decoration:none}
+a:hover{text-decoration:underline}
+</style>
+</helmet>
+<div data-header style="position:sticky;top:0;z-index:50;background:#FFFFFF;border-bottom:1px solid #D7DEE8;padding:18px 24px">
+  <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:12px 28px;flex-wrap:wrap">
+    <a href="Home.dc.html" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#0D3B7A;line-height:1.15" style-hover="text-decoration:none">
+      <img src="uploads/logo.png" alt="Flying Carpet, since 1989, owned and operated" style="height:52px;width:auto"></img>
+      <span>
+        <span style="display:block;font-family:'Archivo',sans-serif;font-weight:900;font-size:19px;letter-spacing:-0.01em">FLYING CARPET</span>
+        <span style="display:block;font-family:'Archivo',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.14em;color:#1B5FBF">&amp; FURNACE CLEANING LTD</span>
+      </span>
+    </a>
+    <nav style="display:flex;gap:20px;flex-wrap:wrap;align-items:center">
+      <a href="Home.dc.html" style="font-family:'Archivo',sans-serif;font-weight:600;font-size:15px;color:#0D3B7A;text-decoration:none;padding:4px 0" style-hover="color:#1D67C9;text-decoration:none">Home</a>
+      <a href="Services.dc.html" style="font-family:'Archivo',sans-serif;font-weight:600;font-size:15px;color:#1D67C9;text-decoration:none;border-bottom:2px solid #1D67C9;padding:4px 0" style-hover="text-decoration:none">Services</a>
+      <a href="About.dc.html" style="font-family:'Archivo',sans-serif;font-weight:600;font-size:15px;color:#0D3B7A;text-decoration:none;padding:4px 0" style-hover="color:#1D67C9;text-decoration:none">About</a>
+      <a href="FAQ.dc.html" style="font-family:'Archivo',sans-serif;font-weight:600;font-size:15px;color:#0D3B7A;text-decoration:none;padding:4px 0" style-hover="color:#1D67C9;text-decoration:none">FAQ</a>
+      <a href="Contact.dc.html" style="font-family:'Archivo',sans-serif;font-weight:600;font-size:15px;color:#0D3B7A;text-decoration:none;padding:4px 0" style-hover="color:#1D67C9;text-decoration:none">Contact</a>
+    </nav>
+    <div style="flex:1"></div>
+    <a href="Contact.dc.html" style="display:inline-block;background:#2F9E44;color:#FFFFFF;font-family:'Archivo',sans-serif;font-weight:600;font-size:15px;padding:12px 24px;border-radius:10px;text-decoration:none;transition:all .15s ease-out" style-hover="background:#278A3B;transform:translateY(-1px);box-shadow:0 8px 20px rgba(47,158,68,0.25);text-decoration:none">Get a Free Quote</a>
+  </div>
+</div>
+
+<section style="position:relative;overflow:hidden;isolation:isolate;background:radial-gradient(700px 460px at 85% 0%,rgba(29,103,201,0.55),transparent 65%),radial-gradient(500px 300px at 10% 100%,rgba(255,255,255,0.07),transparent 70%),linear-gradient(140deg,#0D3B7A 0%,#123F80 100%);padding:clamp(56px,7vw,88px) 24px"><div style="position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(42% 55% at 12% 18%,rgba(29,103,201,0.50),transparent 70%),radial-gradient(38% 48% at 88% 28%,rgba(13,59,122,0.85),transparent 70%),radial-gradient(46% 60% at 70% 92%,rgba(27,95,191,0.45),transparent 70%),radial-gradient(28% 38% at 32% 78%,rgba(255,255,255,0.06),transparent 70%)"></div>
+  <div style="max-width:1200px;margin:0 auto">
+    <div data-reveal style="font-family:'Archivo',sans-serif;font-weight:600;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.75);margin-bottom:12px">Our services</div>
+    <h1 data-reveal="80" style="font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(32px,4.5vw,52px);line-height:1.08;letter-spacing:-0.02em;color:#FFFFFF;margin:0 0 16px;max-width:20ch;text-wrap:pretty">Everything we clean, one standard of work.</h1>
+    <p data-reveal="160" style="font-size:19px;color:rgba(255,255,255,0.9);max-width:62ch;margin:0">Ten services, one crew, and the same promise on every job: truck-mounted hot water extraction where it applies, eco-friendly products, free quotes, and a 24-hour satisfaction guarantee.</p>
+  </div>
+</section>
+
+<sc-for list="{{ groups }}" as="g">
+<section style="position:relative;overflow:hidden;isolation:isolate;background:{{ g.bg }};padding:clamp(64px,8vw,104px) 24px"><div style="position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(40% 50% at 15% 20%,rgba(27,95,191,0.055),transparent 70%),radial-gradient(45% 55% at 85% 70%,rgba(29,103,201,0.045),transparent 70%),radial-gradient(35% 45% at 55% 100%,rgba(13,59,122,0.04),transparent 70%)"></div>
+  <div style="max-width:1200px;margin:0 auto">
+    <div data-reveal style="max-width:720px;margin-bottom:40px">
+      <div style="font-family:'Archivo',sans-serif;font-weight:600;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:#1B5FBF;margin-bottom:12px">{{ g.eyebrow }}</div>
+      <h2 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(28px,4vw,40px);line-height:1.15;letter-spacing:-0.01em;color:#0D3B7A;margin:0 0 12px;text-wrap:pretty">{{ g.title }}</h2>
+      <p style="font-size:17px;margin:0;max-width:65ch">{{ g.intro }}</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px">
+      <sc-for list="{{ g.items }}" as="svc" hint-placeholder-count="5">
+        <a href="{{ svc.href }}" data-reveal="{{ svc.delay }}" style="display:block;background:#FFFFFF;border:1px solid #D7DEE8;border-radius:14px;overflow:hidden;text-decoration:none;color:#173A63;box-shadow:0 2px 8px rgba(13,59,122,0.06);transition:all .15s ease-out" style-hover="transform:translateY(-4px);box-shadow:0 8px 24px rgba(13,59,122,0.12);text-decoration:none">
+          <div style="position:relative;aspect-ratio:4/3;background:repeating-linear-gradient(45deg,#EDF2F9 0 12px,#F6F9FC 12px 24px);border-bottom:1px solid #D7DEE8;display:grid;place-items:center">
+            <span style="font-family:ui-monospace,Menlo,monospace;font-size:12px;color:#5B7395;text-align:center;padding:12px">{{ svc.photo }}</span>
+            <div style="{{ svc.thumbStyle }}"></div>
+          </div>
+          <div style="padding:24px">
+            <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:20px;color:#0D3B7A;margin:0 0 8px">{{ svc.name }}</h3>
+            <p style="font-size:15px;line-height:1.55;margin:0 0 16px">{{ svc.blurb }}</p>
+            <span style="font-family:'Archivo',sans-serif;font-weight:600;font-size:14px;color:#1D67C9">Learn more →</span>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+  </div>
+</section>
+</sc-for>
+
+<section style="padding:0 24px clamp(64px,9vw,120px)">
+  <div style="position:relative;overflow:hidden;isolation:isolate;max-width:1200px;margin:0 auto;background:radial-gradient(560px 380px at 15% 20%,rgba(255,255,255,0.10),transparent 70%),linear-gradient(120deg,#0D3B7A 0%,#1B5FBF 55%,#1D67C9 100%);border-radius:24px;padding:clamp(48px,8vw,96px) clamp(24px,5vw,80px);text-align:center"><div style="position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(42% 55% at 12% 18%,rgba(29,103,201,0.50),transparent 70%),radial-gradient(38% 48% at 88% 28%,rgba(13,59,122,0.85),transparent 70%),radial-gradient(46% 60% at 70% 92%,rgba(27,95,191,0.45),transparent 70%),radial-gradient(28% 38% at 32% 78%,rgba(255,255,255,0.06),transparent 70%)"></div>
+    <h2 data-reveal style="font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(30px,4.5vw,48px);line-height:1.1;letter-spacing:-0.02em;color:#FFFFFF;margin:0 0 16px;text-wrap:pretty">Not sure which service you need?</h2>
+    <p data-reveal="100" style="font-size:19px;color:rgba(255,255,255,0.92);max-width:52ch;margin:0 auto 32px">Describe the problem and we'll tell you exactly what it takes. Quotes are always free.</p>
+    <div data-reveal="200" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;align-items:center">
+      <a href="Contact.dc.html" style="display:inline-block;background:#2F9E44;color:#FFFFFF;font-family:'Archivo',sans-serif;font-weight:600;font-size:17px;padding:16px 32px;border-radius:10px;text-decoration:none;transition:all .15s ease-out" style-hover="background:#278A3B;transform:translateY(-1px);box-shadow:0 8px 20px rgba(47,158,68,0.25);text-decoration:none">Get a Free Quote</a>
+      <a href="tel:604-599-1677" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:20px;color:#FFFFFF;text-decoration:none" style-hover="text-decoration:underline">or call 604-599-1677</a>
+    </div>
+  </div>
+</section>
+
+<footer style="position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(165deg,#0D3B7A 0%,#0A2F63 100%);color:#FFFFFF;padding:64px 24px 0"><div style="position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(45% 55% at 80% 15%,rgba(27,95,191,0.5),transparent 70%),radial-gradient(40% 50% at 15% 90%,rgba(29,103,201,0.35),transparent 70%)"></div>
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:48px 32px;padding-bottom:48px">
+    <div>
+      <div style="font-family:'Archivo',sans-serif;font-weight:900;font-size:20px">FLYING CARPET</div>
+      <div style="font-family:'Archivo',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.14em;color:rgba(255,255,255,0.7);margin-bottom:16px">&amp; FURNACE CLEANING LTD · EST. 1989</div>
+      <p style="font-size:14px;line-height:1.6;color:rgba(255,255,255,0.8);max-width:36ch;margin:0">Independent, owner-operated carpet, upholstery, and furnace/duct cleaning across the Lower Mainland since 1989.</p>
+    </div>
+    <div>
+      <div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px">Services</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px 24px;font-size:14px">
+        <a href="Carpet Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Carpet Cleaning</a>
+        <a href="Furnace Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Furnace Cleaning</a>
+        <a href="Upholstery Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Upholstery Cleaning</a>
+        <a href="Boiler Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Boiler Cleaning</a>
+        <a href="Area Rug Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Area Rug Cleaning</a>
+        <a href="Duct Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Duct Cleaning</a>
+        <a href="Tile and Grout Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Tile &amp; Grout</a>
+        <a href="Dryer Vent Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Dryer Vent Cleaning</a>
+        <a href="Oven Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Oven Cleaning</a>
+        <a href="HVAC Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">HVAC Cleaning</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px">Company</div>
+      <div style="display:grid;gap:8px;font-size:14px">
+        <a href="About.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">About Us</a>
+        <a href="Services.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">All Services</a>
+        <a href="FAQ.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">FAQ</a>
+        <a href="Contact.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Get a Free Quote</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px">Contact</div>
+      <div style="display:grid;gap:8px;font-size:14px;color:rgba(255,255,255,0.85)">
+        <a href="tel:604-599-1677" style="color:#FFFFFF;font-family:'Archivo',sans-serif;font-weight:700;font-size:17px" style-hover="color:#FFFFFF">604-599-1677</a>
+        <a href="mailto:flyingcarpet89@hotmail.com" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">flyingcarpet89@hotmail.com</a>
+        <span>Lower Mainland / Greater Vancouver, BC</span>
+        <span style="color:rgba(255,255,255,0.7)">Payment: cash · cheque · e-transfer</span>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,0.18)">
+    <div style="max-width:1200px;margin:0 auto;padding:20px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:rgba(255,255,255,0.7)">
+      <span>© 2026 Flying Carpet &amp; Furnace Cleaning Ltd. · flyingcarpet.ca</span>
+      <span>Serving the Lower Mainland since 1989 · 24-hour satisfaction guarantee</span>
+    </div>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount(){ import('./fx.js').then(m=>m.initFX()); }
+  renderVals(){
+    const d = i => String(i*70);
+    const IMG = {"Carpet Cleaning":"uploads/carpetcleaning.jpeg","Upholstery Cleaning":"uploads/upholesterycleaning.jpeg","Area Rug Cleaning":"uploads/arearugcleaning.jpeg","Tile & Grout Cleaning":"uploads/tileandgroutcleaning.jpeg","Furnace Cleaning":"uploads/furnacecleaning.jpeg","Boiler Cleaning":"uploads/boilercleaning.jpeg","Duct Cleaning":"uploads/ductcleaning.jpeg","Dryer Vent Cleaning":"uploads/dryerventcleaning.jpeg","HVAC Cleaning":"uploads/hvaccleaning.jpeg","Oven Cleaning":"uploads/ovencleaning.jpeg"};
+    const floors = [
+      {name:'Carpet Cleaning', blurb:'Deep steam cleaning that lifts stains, odours, and years of traffic wear.', photo:'[ photo: carpet clean · 4:3 ]'},
+      {name:'Upholstery Cleaning', blurb:'Sofas, chairs, and fabric furniture refreshed safely and thoroughly.', photo:'[ photo: sofa cleaning · 4:3 ]'},
+      {name:'Area Rug Cleaning', blurb:'Careful, thorough cleaning for wool, synthetic, and delicate rugs.', photo:'[ photo: area rug · 4:3 ]'},
+      {name:'Tile & Grout Cleaning', blurb:'Restore grout lines and tile surfaces to like-new brightness.', photo:'[ photo: tile & grout · 4:3 ]'},
+      {name:'Oven Cleaning', blurb:'A deep, degreasing clean with no harsh chemical residue.', photo:'[ photo: oven clean · 4:3 ]'}
+    ].map((s,i)=>({...s, thumbStyle: IMG[s.name] ? {position:'absolute',inset:0,backgroundImage:'url("'+IMG[s.name]+'")',backgroundSize:'cover',backgroundPosition:'center'} : null, href:s.name.replace(' & ',' and ')+'.dc.html', delay:d(i%3)}));
+    const air = [
+      {name:'Furnace Cleaning', blurb:'Cleaner heat, better airflow, and a healthier home all winter.', photo:'[ photo: furnace · 4:3 ]'},
+      {name:'Boiler Cleaning', blurb:'Keep your boiler system clean and running at its best.', photo:'[ photo: boiler · 4:3 ]'},
+      {name:'Duct Cleaning', blurb:'Clear dust and buildup out of the air pathways in your home.', photo:'[ photo: duct cleaning · 4:3 ]'},
+      {name:'Dryer Vent Cleaning', blurb:'Reduce fire risk and bring drying times back to normal.', photo:'[ photo: dryer vent · 4:3 ]'},
+      {name:'HVAC Cleaning', blurb:'Full-system cleaning for healthier indoor air, year-round.', photo:'[ photo: HVAC system · 4:3 ]'}
+    ].map((s,i)=>({...s, thumbStyle: IMG[s.name] ? {position:'absolute',inset:0,backgroundImage:'url("'+IMG[s.name]+'")',backgroundSize:'cover',backgroundPosition:'center'} : null, href:s.name.replace(' & ',' and ')+'.dc.html', delay:d(i%3)}));
+    return { groups: [
+      {eyebrow:'Carpets, fabric & surfaces', title:'Carpet, rug & surface cleaning', intro:'Truck-mounted hot water extraction and eco-friendly products for the surfaces your family lives on every day.', bg:'linear-gradient(180deg,#FFFFFF,#F8FAFD)', items:floors},
+      {eyebrow:'Heating & air systems', title:'Furnace, duct & HVAC cleaning', intro:'Four related but distinct services. Each system gets its own dedicated cleaning process and its own page.', bg:'radial-gradient(700px 420px at 92% 0%,rgba(27,95,191,0.06),transparent 70%),linear-gradient(180deg,#F3F7FC,#FBFDFF)', items:air}
+    ]};
+  }
+}
+</script>
+</body>
+</html>

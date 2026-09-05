@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;900&amp;family=Public+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#FFFFFF;color:#173A63;font-family:'Public Sans',system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:#1D67C9;text-decoration:none}
+a:hover{text-decoration:underline}
+</style>
+</helmet>
+<div data-header style="position:sticky;top:0;z-index:50;background:#FFFFFF;border-bottom:1px solid #D7DEE8;padding:18px 24px">
+  <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:12px 28px;flex-wrap:wrap">
+    <a href="Home.dc.html" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#0D3B7A;line-height:1.15" style-hover="text-decoration:none">
+      <img src="uploads/logo.png" alt="Flying Carpet, since 1989, owned and operated" style="height:52px;width:auto"></img>
+      <span>
+        <span style="display:block;font-family:'Archivo',sans-serif;font-weight:900;font-size:19px;letter-spacing:-0.01em">FLYING CARPET</span>
+        <span style="display:block;font-family:'Archivo',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.14em;color:#1B5FBF">&amp; FURNACE CLEANING LTD</span>
+      </span>
+    </a>
+    <nav style="display:flex;gap:20px;flex-wrap:wrap;align-items:center">
+      <a href="Home.dc.html" style="font-family:'Archivo',sans-serif;font-weight:600;font-size:15px;color:#0D3B7A;text-decoration:none;padding:4px 0" style-hover="color:#1D67C9;text-decoration:none">Home</a>
+      <a href="Services.dc.html" style="font-family:'Archivo',sans-serif;font-weight:600;font-size:15px;color:#1D67C9;text-decoration:none;border-bottom:2px solid #1D67C9;padding:4px 0" style-hover="text-decoration:none">Services</a>
+      <a href="About.dc.html" style="font-family:'Archivo',sans-serif;font-weight:600;font-size:15px;color:#0D3B7A;text-decoration:none;padding:4px 0" style-hover="color:#1D67C9;text-decoration:none">About</a>
+      <a href="FAQ.dc.html" style="font-family:'Archivo',sans-serif;font-weight:600;font-size:15px;color:#0D3B7A;text-decoration:none;padding:4px 0" style-hover="color:#1D67C9;text-decoration:none">FAQ</a>
+      <a href="Contact.dc.html" style="font-family:'Archivo',sans-serif;font-weight:600;font-size:15px;color:#0D3B7A;text-decoration:none;padding:4px 0" style-hover="color:#1D67C9;text-decoration:none">Contact</a>
+    </nav>
+    <div style="flex:1"></div>
+    <a href="Contact.dc.html" style="display:inline-block;background:#2F9E44;color:#FFFFFF;font-family:'Archivo',sans-serif;font-weight:600;font-size:15px;padding:12px 24px;border-radius:10px;text-decoration:none;transition:all .15s ease-out" style-hover="background:#278A3B;transform:translateY(-1px);box-shadow:0 8px 20px rgba(47,158,68,0.25);text-decoration:none">Get a Free Quote</a>
+  </div>
+</div>
+
+<section style="position:relative;overflow:hidden;isolation:isolate;background:radial-gradient(700px 460px at 85% 0%,rgba(29,103,201,0.55),transparent 65%),radial-gradient(500px 300px at 10% 100%,rgba(255,255,255,0.07),transparent 70%),linear-gradient(155deg,#0D3B7A 0%,#11458C 100%);padding:clamp(56px,7vw,88px) 24px"><div style="position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(42% 55% at 12% 18%,rgba(29,103,201,0.50),transparent 70%),radial-gradient(38% 48% at 88% 28%,rgba(13,59,122,0.85),transparent 70%),radial-gradient(46% 60% at 70% 92%,rgba(27,95,191,0.45),transparent 70%),radial-gradient(28% 38% at 32% 78%,rgba(255,255,255,0.06),transparent 70%)"></div>
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px;align-items:center">
+    <div>
+      <div data-reveal style="font-size:14px;margin-bottom:16px"><a href="Services.dc.html" style="color:rgba(255,255,255,0.8)" style-hover="color:#FFFFFF">Services</a><span style="color:rgba(255,255,255,0.5)"> / </span><span style="color:#FFFFFF;font-weight:600">{{ s.name }}</span></div>
+      <div data-reveal="60" style="font-family:'Archivo',sans-serif;font-weight:600;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.75);margin-bottom:12px">{{ s.eyebrow }}</div>
+      <h1 data-reveal="120" style="font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(32px,4.5vw,52px);line-height:1.08;letter-spacing:-0.02em;color:#FFFFFF;margin:0 0 16px;text-wrap:pretty">{{ s.h1 }}</h1>
+      <p data-reveal="200" style="font-size:19px;color:rgba(255,255,255,0.9);max-width:56ch;margin:0 0 32px">{{ s.lead }}</p>
+      <div data-reveal="300" style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-bottom:24px">
+        <a href="Contact.dc.html" style="display:inline-block;background:#2F9E44;color:#FFFFFF;font-family:'Archivo',sans-serif;font-weight:600;font-size:17px;padding:16px 32px;border-radius:10px;text-decoration:none;transition:all .15s ease-out" style-hover="background:#278A3B;transform:translateY(-1px);box-shadow:0 8px 20px rgba(47,158,68,0.25);text-decoration:none">Get a Free Quote</a>
+        <a href="tel:604-599-1677" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:18px;color:#FFFFFF;text-decoration:none" style-hover="text-decoration:underline">604-599-1677</a>
+      </div>
+      <div data-reveal="380" style="display:flex;gap:12px;flex-wrap:wrap">
+        <span style="background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.28);border-radius:10px;padding:10px 16px;font-size:14px;font-weight:600;color:#FFFFFF;">35+ years experience</span>
+        <span style="background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.28);border-radius:10px;padding:10px 16px;font-size:14px;font-weight:600;color:#FFFFFF;">Eco-friendly products</span>
+        <span style="background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.28);border-radius:10px;padding:10px 16px;font-size:14px;font-weight:600;color:#FFFFFF;">24-hour guarantee</span>
+      </div>
+    </div>
+    <div data-reveal="200" style="min-width:0">
+      <img src="uploads/carpetcleaning.jpeg" alt="Carpet Cleaning by Flying Carpet" style="display:block;width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px;border:1px solid rgba(255,255,255,0.35);box-shadow:0 24px 56px rgba(6,24,52,0.45)"></img>
+    </div>
+  </div>
+</section>
+
+<section style="position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(180deg,#FFFFFF 0%,#F7FAFD 100%);padding:clamp(64px,9vw,112px) 24px"><div style="position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(40% 50% at 15% 20%,rgba(27,95,191,0.055),transparent 70%),radial-gradient(45% 55% at 85% 70%,rgba(29,103,201,0.045),transparent 70%),radial-gradient(35% 45% at 55% 100%,rgba(13,59,122,0.04),transparent 70%)"></div>
+  <div style="max-width:1200px;margin:0 auto">
+    <div data-reveal style="max-width:720px;margin-bottom:40px">
+      <div style="font-family:'Archivo',sans-serif;font-weight:600;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:#1B5FBF;margin-bottom:12px">Sound familiar?</div>
+      <h2 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(28px,4vw,40px);line-height:1.15;letter-spacing:-0.01em;color:#0D3B7A;margin:0;text-wrap:pretty">{{ s.concernsTitle }}</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
+      <sc-for list="{{ s.concerns }}" as="c" hint-placeholder-count="3">
+        <div data-reveal="{{ c.delay }}" style="background:#F6F9FC;border:1px solid #D7DEE8;border-radius:14px;padding:32px;box-shadow:0 2px 8px rgba(13,59,122,0.06);transition:all .15s ease-out" style-hover="transform:translateY(-4px);box-shadow:0 8px 24px rgba(13,59,122,0.12)">
+          <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:19px;color:#0D3B7A;margin:0 0 8px">{{ c.t }}</h3>
+          <p style="font-size:15px;line-height:1.6;margin:0">{{ c.x }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section style="position:relative;overflow:hidden;isolation:isolate;background:radial-gradient(700px 420px at 92% 0%,rgba(27,95,191,0.06),transparent 70%),linear-gradient(180deg,#F3F7FC,#FBFDFF);padding:clamp(64px,9vw,112px) 24px"><div style="position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(40% 50% at 15% 20%,rgba(27,95,191,0.055),transparent 70%),radial-gradient(45% 55% at 85% 70%,rgba(29,103,201,0.045),transparent 70%),radial-gradient(35% 45% at 55% 100%,rgba(13,59,122,0.04),transparent 70%)"></div>
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px;align-items:start">
+    <div data-reveal>
+      <div style="font-family:'Archivo',sans-serif;font-weight:600;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:#1B5FBF;margin-bottom:12px">Our service</div>
+      <h2 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(28px,4vw,40px);line-height:1.15;letter-spacing:-0.01em;color:#0D3B7A;margin:0 0 16px;text-wrap:pretty">{{ s.serviceTitle }}</h2>
+      <p style="font-size:17px;max-width:60ch;margin:0 0 24px">{{ s.serviceIntro }}</p>
+      <div style="display:grid;gap:12px">
+        <sc-for list="{{ s.includes }}" as="inc" hint-placeholder-count="4">
+          <div style="display:flex;gap:12px;align-items:flex-start">
+            <div style="flex:none;width:24px;height:24px;border-radius:999px;background:rgba(13,59,122,0.08);display:grid;place-items:center;font-size:13px;font-weight:700;color:#0D3B7A;margin-top:2px">✓</div>
+            <span style="font-size:16px">{{ inc }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    <div data-reveal="150">
+      <div style="background:#FFFFFF;border:1px solid #D7DEE8;border-radius:14px;padding:32px;box-shadow:0 2px 8px rgba(13,59,122,0.06)">
+        <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:20px;color:#0D3B7A;margin:0 0 24px">What to expect</h3>
+        <div style="display:grid;gap:20px">
+          <sc-for list="{{ s.expect }}" as="e" hint-placeholder-count="3">
+            <div style="display:flex;gap:16px;align-items:flex-start">
+              <div style="flex:none;width:32px;height:32px;border-radius:999px;background:#0D3B7A;color:#FFFFFF;display:grid;place-items:center;font-family:'Archivo',sans-serif;font-weight:700;font-size:14px">{{ e.n }}</div>
+              <div>
+                <div style="font-family:'Archivo',sans-serif;font-weight:600;font-size:16px;color:#0D3B7A">{{ e.t }}</div>
+                <div style="font-size:14px;line-height:1.55;color:#173A63">{{ e.x }}</div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      <div style="margin-top:24px;background:radial-gradient(300px 200px at 90% 10%,rgba(29,103,201,0.5),transparent 70%),linear-gradient(140deg,#0D3B7A,#12488F);border:1px solid rgba(255,255,255,0.22);border-radius:14px;padding:24px 32px;box-shadow:0 12px 32px rgba(13,59,122,0.16);color:#FFFFFF;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+        <div style="flex:none;width:40px;height:40px;border-radius:999px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.35);display:grid;place-items:center;font-weight:700">24h</div>
+        <p style="font-size:15px;line-height:1.55;margin:0;flex:1;min-width:220px"><strong style="font-family:'Archivo',sans-serif">Our 24-hour guarantee.</strong> If you're not satisfied with any area we cleaned, tell us within 24 hours and we'll return to make it right. No charge, no argument.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(180deg,#FFFFFF 0%,#F7FAFD 100%);padding:clamp(64px,9vw,112px) 24px"><div style="position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(40% 50% at 15% 20%,rgba(27,95,191,0.055),transparent 70%),radial-gradient(45% 55% at 85% 70%,rgba(29,103,201,0.045),transparent 70%),radial-gradient(35% 45% at 55% 100%,rgba(13,59,122,0.04),transparent 70%)"></div>
+  <div style="max-width:1200px;margin:0 auto">
+    <div data-reveal style="max-width:720px;margin-bottom:48px">
+      <div style="font-family:'Archivo',sans-serif;font-weight:600;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:#1B5FBF;margin-bottom:12px">Our process</div>
+      <h2 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(28px,4vw,40px);line-height:1.15;letter-spacing:-0.01em;color:#0D3B7A;margin:0;text-wrap:pretty">How every job works, start to finish.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px">
+      <sc-for list="{{ s.process }}" as="p" hint-placeholder-count="4">
+        <div data-reveal="{{ p.delay }}" style="background:#FFFFFF;border:1px solid #D7DEE8;border-radius:14px;padding:32px;box-shadow:0 2px 8px rgba(13,59,122,0.06);transition:all .15s ease-out" style-hover="transform:translateY(-4px);box-shadow:0 8px 24px rgba(13,59,122,0.12)">
+          <div style="font-family:'Archivo',sans-serif;font-weight:900;font-size:32px;color:#1D67C9;margin-bottom:12px">{{ p.n }}</div>
+          <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:18px;color:#0D3B7A;margin:0 0 8px">{{ p.t }}</h3>
+          <p style="font-size:15px;line-height:1.6;margin:0">{{ p.x }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section style="position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(180deg,#F3F7FC,#FAFCFE);padding:clamp(48px,7vw,80px) 24px"><div style="position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(40% 50% at 15% 20%,rgba(27,95,191,0.055),transparent 70%),radial-gradient(45% 55% at 85% 70%,rgba(29,103,201,0.045),transparent 70%),radial-gradient(35% 45% at 55% 100%,rgba(13,59,122,0.04),transparent 70%)"></div>
+  <div style="max-width:1200px;margin:0 auto">
+    <div data-reveal style="margin-bottom:24px">
+      <h2 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:24px;color:#0D3B7A;margin:0">Related services</h2>
+    </div>
+    <div data-reveal="80" style="display:flex;gap:12px;flex-wrap:wrap">
+      <sc-for list="{{ s.related }}" as="r" hint-placeholder-count="4">
+        <a href="{{ r.href }}" style="background:#FFFFFF;border:1px solid #D7DEE8;border-radius:10px;padding:10px 20px;font-family:'Archivo',sans-serif;font-weight:600;font-size:14px;color:#0D3B7A;text-decoration:none;transition:all .15s ease-out" style-hover="border-color:#1D67C9;color:#1D67C9;text-decoration:none">{{ r.label }} →</a>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section style="padding:clamp(64px,9vw,112px) 24px">
+  <div style="position:relative;overflow:hidden;isolation:isolate;max-width:1200px;margin:0 auto;background:radial-gradient(560px 380px at 15% 20%,rgba(255,255,255,0.10),transparent 70%),linear-gradient(120deg,#0D3B7A 0%,#1B5FBF 55%,#1D67C9 100%);border-radius:24px;padding:clamp(48px,8vw,96px) clamp(24px,5vw,80px);text-align:center"><div style="position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(42% 55% at 12% 18%,rgba(29,103,201,0.50),transparent 70%),radial-gradient(38% 48% at 88% 28%,rgba(13,59,122,0.85),transparent 70%),radial-gradient(46% 60% at 70% 92%,rgba(27,95,191,0.45),transparent 70%),radial-gradient(28% 38% at 32% 78%,rgba(255,255,255,0.06),transparent 70%)"></div>
+    <h2 data-reveal style="font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(30px,4.5vw,48px);line-height:1.1;letter-spacing:-0.02em;color:#FFFFFF;margin:0 0 16px;text-wrap:pretty">{{ s.ctaTitle }}</h2>
+    <p data-reveal="100" style="font-size:19px;color:rgba(255,255,255,0.92);max-width:52ch;margin:0 auto 32px">Free quotes by phone, email, or the contact form. Serving the whole Lower Mainland.</p>
+    <div data-reveal="200" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;align-items:center">
+      <a href="Contact.dc.html" style="display:inline-block;background:#2F9E44;color:#FFFFFF;font-family:'Archivo',sans-serif;font-weight:600;font-size:17px;padding:16px 32px;border-radius:10px;text-decoration:none;transition:all .15s ease-out" style-hover="background:#278A3B;transform:translateY(-1px);box-shadow:0 8px 20px rgba(47,158,68,0.25);text-decoration:none">Get a Free Quote</a>
+      <a href="tel:604-599-1677" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:20px;color:#FFFFFF;text-decoration:none" style-hover="text-decoration:underline">or call 604-599-1677</a>
+    </div>
+  </div>
+</section>
+
+<footer style="position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(165deg,#0D3B7A 0%,#0A2F63 100%);color:#FFFFFF;padding:64px 24px 0"><div style="position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(45% 55% at 80% 15%,rgba(27,95,191,0.5),transparent 70%),radial-gradient(40% 50% at 15% 90%,rgba(29,103,201,0.35),transparent 70%)"></div>
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:48px 32px;padding-bottom:48px">
+    <div>
+      <div style="font-family:'Archivo',sans-serif;font-weight:900;font-size:20px">FLYING CARPET</div>
+      <div style="font-family:'Archivo',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.14em;color:rgba(255,255,255,0.7);margin-bottom:16px">&amp; FURNACE CLEANING LTD · EST. 1989</div>
+      <p style="font-size:14px;line-height:1.6;color:rgba(255,255,255,0.8);max-width:36ch;margin:0">Independent, owner-operated carpet, upholstery, and furnace/duct cleaning across the Lower Mainland since 1989.</p>
+    </div>
+    <div>
+      <div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px">Services</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px 24px;font-size:14px">
+        <a href="Carpet Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Carpet Cleaning</a>
+        <a href="Furnace Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Furnace Cleaning</a>
+        <a href="Upholstery Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Upholstery Cleaning</a>
+        <a href="Boiler Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Boiler Cleaning</a>
+        <a href="Area Rug Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Area Rug Cleaning</a>
+        <a href="Duct Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Duct Cleaning</a>
+        <a href="Tile and Grout Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Tile &amp; Grout</a>
+        <a href="Dryer Vent Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Dryer Vent Cleaning</a>
+        <a href="Oven Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Oven Cleaning</a>
+        <a href="HVAC Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">HVAC Cleaning</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px">Company</div>
+      <div style="display:grid;gap:8px;font-size:14px">
+        <a href="About.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">About Us</a>
+        <a href="Services.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">All Services</a>
+        <a href="FAQ.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">FAQ</a>
+        <a href="Contact.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Get a Free Quote</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px">Contact</div>
+      <div style="display:grid;gap:8px;font-size:14px;color:rgba(255,255,255,0.85)">
+        <a href="tel:604-599-1677" style="color:#FFFFFF;font-family:'Archivo',sans-serif;font-weight:700;font-size:17px" style-hover="color:#FFFFFF">604-599-1677</a>
+        <a href="mailto:flyingcarpet89@hotmail.com" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">flyingcarpet89@hotmail.com</a>
+        <span>Lower Mainland / Greater Vancouver, BC</span>
+        <span style="color:rgba(255,255,255,0.7)">Payment: cash · cheque · e-transfer</span>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,0.18)">
+    <div style="max-width:1200px;margin:0 auto;padding:20px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:rgba(255,255,255,0.7)">
+      <span>© 2026 Flying Carpet &amp; Furnace Cleaning Ltd. · flyingcarpet.ca</span>
+      <span>Serving the Lower Mainland since 1989 · 24-hour satisfaction guarantee</span>
+    </div>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount(){ import('./fx.js').then(m=>m.initFX()); }
+  renderVals(){
+    const D = {
+      'Carpet Cleaning': {
+        eyebrow:'Carpets, fabric &amp; surfaces',
+        h1:'Carpet cleaning that actually goes deep.',
+        lead:'Traffic lanes, pet accidents, stubborn stains. Our truck-mounted hot water extraction pulls out what rental machines leave behind, with eco-friendly products safe for kids and pets.',
+        photo:'[ photo: carpet cleaning in progress · 16:9 ]',
+        concernsTitle:'The carpet problems we hear about every week.',
+        concerns:[
+          {t:'"The traffic lanes won’t come out."', x:'Ground-in soil bonds to carpet fibres over time. Surface cleaning spreads it around; hot water extraction lifts it out.'},
+          {t:'"I rented a machine and it looked worse after."', x:'Rentals run cooler, spray more water than they recover, and leave soapy residue that attracts new dirt fast.'},
+          {t:'"There’s a smell I can’t find."', x:'Odours live deep in the pile and underlay. Deep extraction removes the source instead of masking it.'}
+        ],
+        serviceTitle:'Truck-mounted hot water extraction, done by hand where it counts.',
+        serviceIntro:'We pre-treat spots and traffic areas, then clean wall-to-wall with professional truck-mounted equipment. High heat, strong recovery, minimal moisture left behind.',
+        includes:['Pre-inspection and spot treatment of stains and traffic lanes','Truck-mounted hot water extraction · not a portable unit','Eco-friendly cleaning solutions, safe for kids and pets','Grooming and faster-dry finishing pass'],
+        expect:[
+          {n:'1', t:'Walk-through first', x:'We look at problem areas with you and confirm the price before we start.'},
+          {n:'2', t:'We bring everything', x:'Equipment stays in the van. We just need access and a parking spot.'},
+          {n:'3', t:'Dry in hours, not days', x:'Strong recovery means carpets are typically walkable the same day.'}
+        ],
+        related:['Upholstery Cleaning','Area Rug Cleaning','Tile &amp; Grout Cleaning','Oven Cleaning'],
+        ctaTitle:'Ready for carpets you’re not embarrassed by?'
+      },
+      'Upholstery Cleaning': {
+        eyebrow:'Carpets, fabric &amp; surfaces',
+        h1:'Upholstery cleaning your furniture can handle.',
+        lead:'Sofas, sectionals, dining chairs, headboards. Cleaned with the right method for the fabric, eco-friendly products, and 35+ years of knowing the difference.',
+        photo:'[ photo: sofa being cleaned · 16:9 ]',
+        concernsTitle:'Why people put off cleaning their furniture.',
+        concerns:[
+          {t:'"I’m worried the fabric will be ruined."', x:'We identify the fibre first and match the method to it. That judgment is what 35 years on the job buys you.'},
+          {t:'"It never feels clean, just damp."', x:'Truck-mounted recovery pulls moisture back out, so cushions dry fast and don’t sour.'},
+          {t:'"The pet smell comes back every time."', x:'We clean down to where the odour lives, not just the surface fabric.'}
+        ],
+        serviceTitle:'Fabric-first cleaning for the furniture you live on.',
+        serviceIntro:'Every piece gets a fibre check, targeted pre-treatment, and a hot water extraction clean tuned to the fabric. Never a one-setting-fits-all pass.',
+        includes:['Fabric and fibre identification before any cleaning','Pre-treatment of body oils, spots, and pet areas','Hot water extraction tuned to the fabric','Eco-friendly products safe for the whole family'],
+        expect:[
+          {n:'1', t:'Honest assessment', x:'If a piece won’t clean up well, we tell you before you spend a dollar.'},
+          {n:'2', t:'Careful with your home', x:'Floors and walls protected; furniture moved and replaced with care.'},
+          {n:'3', t:'Fast dry times', x:'Most pieces are usable again the same evening.'}
+        ],
+        related:['Carpet Cleaning','Area Rug Cleaning','Tile &amp; Grout Cleaning','Oven Cleaning'],
+        ctaTitle:'Give your furniture another good decade.'
+      },
+      'Area Rug Cleaning': {
+        eyebrow:'Carpets, fabric &amp; surfaces',
+        h1:'Area rug cleaning for wool, synthetic, and everything between.',
+        lead:'Area rugs take the most traffic and hide the most soil. We clean them thoroughly and gently. Matched to the fibre, backed by our 24-hour guarantee.',
+        photo:'[ photo: area rug cleaning · 16:9 ]',
+        concernsTitle:'Rugs are not just small carpets.',
+        concerns:[
+          {t:'"It’s wool. I’m scared to touch it."', x:'Wool needs controlled heat and the right chemistry. We’ve cleaned Lower Mainland wool rugs since 1989.'},
+          {t:'"The fringe looks grey no matter what."', x:'Fringe gets its own careful treatment. Not the same pass as the pile.'},
+          {t:'"Colours look dull and flat."', x:'Soil dulls colour. Deep extraction brings the pattern back without harsh brightening agents.'}
+        ],
+        serviceTitle:'Gentle on the rug, tough on what’s in it.',
+        serviceIntro:'We identify the fibre and dye stability first, then clean with the method the rug can handle. Eco-friendly products throughout.',
+        includes:['Fibre and dye check before cleaning','Method matched to wool, synthetic, or delicate rugs','Careful fringe and edge treatment','Deodorizing of pet-affected rugs'],
+        expect:[
+          {n:'1', t:'Cleaned in your home', x:'We’re van-based and mobile. No drop-off, no weeks of waiting.'},
+          {n:'2', t:'Straight answers', x:'If a rug needs specialty off-site care, we’ll say so up front.'},
+          {n:'3', t:'Same-day dry', x:'Proper recovery means rugs are back in service quickly.'}
+        ],
+        related:['Carpet Cleaning','Upholstery Cleaning','Tile &amp; Grout Cleaning','Oven Cleaning'],
+        ctaTitle:'Bring the colour back to your rugs.'
+      },
+      'Tile &amp; Grout Cleaning': {
+        eyebrow:'Carpets, fabric &amp; surfaces',
+        h1:'Tile &amp; grout cleaning that scrubbing can’t match.',
+        lead:'Grout is porous. It soaks up years of grime that mopping only smears around. High-pressure hot water extraction flushes it out and rinses it away.',
+        photo:'[ photo: tile &amp; grout before/after · 16:9 ]',
+        concernsTitle:'Why your grout never looks clean.',
+        concerns:[
+          {t:'"I scrub on my knees and it’s still dark."', x:'Soil sits below the surface of porous grout. Hand scrubbing can’t reach it; pressurized extraction can.'},
+          {t:'"Mopping just moves dirty water around."', x:'Every mop pass deposits soil back into grout lines. It needs a rinse-and-recover clean.'},
+          {t:'"Harsh cleaners worry me."', x:'We use eco-friendly solutions. No bleach fumes through the house.'}
+        ],
+        serviceTitle:'Heat, pressure, and full recovery. Not elbow grease.',
+        serviceIntro:'We pre-treat the grout lines, agitate, then clean with heated pressurized extraction that pulls the soil out of the pores and off your floor.',
+        includes:['Alkaline pre-treatment of tile and grout lines','Agitation of grout lines and problem areas','Heated pressurized rinse with full water recovery','Kitchens, bathrooms, entryways, and commercial floors'],
+        expect:[
+          {n:'1', t:'A visible difference', x:'Grout typically comes back several shades lighter. You’ll see the line where we started.'},
+          {n:'2', t:'No mess left behind', x:'All rinse water is recovered to the truck, not your drain or baseboards.'},
+          {n:'3', t:'Walk on it same day', x:'Hard surfaces dry quickly after recovery.'}
+        ],
+        related:['Carpet Cleaning','Oven Cleaning','Upholstery Cleaning','Area Rug Cleaning'],
+        ctaTitle:'See what colour your grout really is.'
+      },
+      'Furnace Cleaning': {
+        eyebrow:'Heating &amp; air systems',
+        h1:'Furnace cleaning for cleaner heat and better airflow.',
+        lead:'Your furnace moves every cubic foot of air in your home. A clean system runs easier, heats better, and stops circulating years of dust every time it kicks on.',
+        photo:'[ photo: furnace service · 16:9 ]',
+        concernsTitle:'Signs your furnace is overdue.',
+        concerns:[
+          {t:'"Dust comes back the day after I clean."', x:'If the furnace and its blower are dirty, every heating cycle redistributes dust through the house.'},
+          {t:'"Some rooms barely get warm."', x:'Buildup restricts airflow. A clean system moves air the way it was designed to.'},
+          {t:'"It smells like burning when the heat starts."', x:'That’s often dust burning off internal components. A sign the system needs cleaning.'}
+        ],
+        serviceTitle:'A thorough clean of the heart of your heating system.',
+        serviceIntro:'We clean the furnace interior, blower compartment, and components so your system runs clean into the season. A separate, dedicated service from duct cleaning.',
+        includes:['Furnace interior and blower compartment cleaning','Removal of built-up dust and debris from components','Powerful vacuum recovery · debris leaves in our van','Best paired with duct cleaning, quoted separately'],
+        expect:[
+          {n:'1', t:'Book before the cold', x:'Fall fills up fast. The best time to clean is before the heating season.'},
+          {n:'2', t:'Tidy, contained work', x:'Drop sheets down, debris recovered, work area left clean.'},
+          {n:'3', t:'Straightforward pricing', x:'Free quote first; add duct or dryer vent cleaning in the same visit.'}
+        ],
+        related:['Duct Cleaning','HVAC Cleaning','Boiler Cleaning','Dryer Vent Cleaning'],
+        ctaTitle:'Head into winter with a clean furnace.'
+      },
+      'Boiler Cleaning': {
+        eyebrow:'Heating &amp; air systems',
+        h1:'Boiler cleaning that keeps your heat efficient.',
+        lead:'Soot and scale make a boiler work harder for the same heat. Regular cleaning keeps the system efficient, dependable, and ready for the season.',
+        photo:'[ photo: boiler system · 16:9 ]',
+        concernsTitle:'What a dirty boiler costs you.',
+        concerns:[
+          {t:'"Heating bills keep creeping up."', x:'Even a thin layer of soot insulates heat-exchange surfaces, forcing the boiler to burn more for the same warmth.'},
+          {t:'"It’s been years since anyone looked at it."', x:'Boilers are out of sight, out of mind. Until buildup becomes a mid-winter breakdown.'},
+          {t:'"Is this different from furnace cleaning?"', x:'Yes. Boilers are a different system with their own cleaning process. We do both, as separate services.'}
+        ],
+        serviceTitle:'Dedicated cleaning for hot-water and steam heating systems.',
+        serviceIntro:'We clean the boiler’s heat-exchange surfaces and components, removing the soot and buildup that steal efficiency.',
+        includes:['Cleaning of heat-exchange surfaces and components','Removal of soot and scale buildup','Residential and commercial boiler systems','35+ years of experience with Lower Mainland systems'],
+        expect:[
+          {n:'1', t:'Off-season is ideal', x:'Spring through early fall is the easiest time to schedule a boiler clean.'},
+          {n:'2', t:'Clean, contained work', x:'Soot stays in our equipment, not on your mechanical room floor.'},
+          {n:'3', t:'One crew, whole system', x:'Pair with furnace, duct, or HVAC cleaning in a single visit.'}
+        ],
+        related:['Furnace Cleaning','HVAC Cleaning','Duct Cleaning','Dryer Vent Cleaning'],
+        ctaTitle:'Keep your boiler running like it should.'
+      },
+      'Duct Cleaning': {
+        eyebrow:'Heating &amp; air systems',
+        h1:'Duct cleaning for the air your family breathes.',
+        lead:'Your ducts are the lungs of your home. And they collect dust, dander, and construction debris for years. We clean them out with powerful truck-based vacuum equipment.',
+        photo:'[ photo: duct cleaning equipment · 16:9 ]',
+        concernsTitle:'What’s hiding in your ducts.',
+        concerns:[
+          {t:'"Allergies act up the moment the heat turns on."', x:'Every cycle pushes air across whatever has settled in the ducts. Dust, dander, pollen.'},
+          {t:'"We just renovated and the dust won’t stop."', x:'Drywall and construction dust settles deep in duct runs and keeps resurfacing until it’s physically removed.'},
+          {t:'"The vents have never been cleaned."', x:'In an older Lower Mainland home, that can mean decades of accumulation.'}
+        ],
+        serviceTitle:'Whole-system duct cleaning, supply and return.',
+        serviceIntro:'We clean the full duct network. Supply runs, return runs, and registers. Pulling debris back to powerful vacuum equipment instead of loosening it into your home.',
+        includes:['Supply and return duct runs cleaned end to end','Registers and grilles cleaned','Powerful vacuum recovery · debris leaves in the van','Best paired with furnace cleaning, quoted separately'],
+        expect:[
+          {n:'1', t:'Whole-home scope', x:'We confirm the vent count with you so the quote is accurate and complete.'},
+          {n:'2', t:'No dust storm', x:'Debris is pulled under suction, not blown around your rooms.'},
+          {n:'3', t:'Noticeably fresher air', x:'Most customers notice less settling dust within days.'}
+        ],
+        related:['Furnace Cleaning','HVAC Cleaning','Dryer Vent Cleaning','Boiler Cleaning'],
+        ctaTitle:'Breathe easier at home.'
+      },
+      'Dryer Vent Cleaning': {
+        eyebrow:'Heating &amp; air systems',
+        h1:'Dryer vent cleaning. A small job that prevents a big one.',
+        lead:'Lint-clogged dryer vents are a leading cause of house fires, and the reason your dryer takes two cycles to do one load. Cleaning it is quick, inexpensive, and overdue in most homes.',
+        photo:'[ photo: dryer vent lint · 16:9 ]',
+        concernsTitle:'Your dryer is trying to tell you something.',
+        concerns:[
+          {t:'"Towels take two full cycles now."', x:'A restricted vent traps moist air in the drum. Clothes tumble but don’t dry.'},
+          {t:'"The laundry room gets hot and humid."', x:'Exhaust that can’t leave through the vent leaks into the room instead.'},
+          {t:'"I clean the lint trap every load."', x:'The trap catches a fraction. The rest builds up in the vent line year after year.'}
+        ],
+        serviceTitle:'Full vent-line cleaning, from the dryer to the outside wall.',
+        serviceIntro:'We clear the entire vent run. Not just the first stretch. Restoring airflow and removing the lint that creates fire risk.',
+        includes:['Complete vent line cleaned, dryer to exterior hood','Lint and blockage removal along the full run','Airflow check when the job is done','Quick to add on to any furnace or duct visit'],
+        expect:[
+          {n:'1', t:'Fast appointment', x:'Usually under an hour. Easy to combine with other services.'},
+          {n:'2', t:'Immediate difference', x:'Loads dry in one cycle again, and the dryer runs cooler.'},
+          {n:'3', t:'Cheap insurance', x:'A small job that removes a real fire hazard.'}
+        ],
+        related:['Duct Cleaning','Furnace Cleaning','HVAC Cleaning','Boiler Cleaning'],
+        ctaTitle:'One hour, one less fire hazard.'
+      },
+      'HVAC Cleaning': {
+        eyebrow:'Heating &amp; air systems',
+        h1:'HVAC cleaning for the whole system, not just parts.',
+        lead:'Heating, ventilation, and air conditioning work as one system. And soil anywhere in it circulates everywhere. We clean the system as a whole.',
+        photo:'[ photo: HVAC system · 16:9 ]',
+        concernsTitle:'When one dirty component undoes the rest.',
+        concerns:[
+          {t:'"We cleaned the ducts but the air still seems dusty."', x:'If the air handler and components stayed dirty, the system re-contaminates the clean ducts.'},
+          {t:'"The building’s air feels stale."', x:'Commercial and multi-unit HVAC accumulates soil faster than most maintenance schedules account for.'},
+          {t:'"Who cleans the whole thing?"', x:'We do. Furnace, ducts, and HVAC components, as one coordinated job or separate services.'}
+        ],
+        serviceTitle:'Coordinated cleaning across your heating and cooling system.',
+        serviceIntro:'We clean HVAC components and air pathways together so the whole system runs clean. For homes and commercial spaces across the Lower Mainland.',
+        includes:['Air handler and system component cleaning','Coordinated with duct and furnace cleaning','Residential and commercial systems','Powerful truck-based vacuum recovery'],
+        expect:[
+          {n:'1', t:'Scoped to your system', x:'Every system is different. We quote after understanding yours.'},
+          {n:'2', t:'One visit, whole system', x:'Combine furnace, duct, and HVAC cleaning into a single appointment.'},
+          {n:'3', t:'Commercial-friendly', x:'We work around business hours where needed.'}
+        ],
+        related:['Furnace Cleaning','Duct Cleaning','Boiler Cleaning','Dryer Vent Cleaning'],
+        ctaTitle:'One clean system, end to end.'
+      },
+      'Oven Cleaning': {
+        eyebrow:'Carpets, fabric &amp; surfaces',
+        h1:'Oven cleaning without the fumes.',
+        lead:'Baked-on grease is the hardest cleaning job in the kitchen. And the harsh sprays are worse than the grime. We deep-clean ovens with effective, eco-friendly products.',
+        photo:'[ photo: oven detail clean · 16:9 ]',
+        concernsTitle:'Why the oven never gets done.',
+        concerns:[
+          {t:'"Oven cleaner fumes drive us out of the house."', x:'Caustic sprays work by being nasty. Our eco-friendly approach cleans without gassing the kitchen.'},
+          {t:'"Self-clean mode smokes and smells."', x:'Pyrolytic cycles burn residue at extreme heat. Hard on the oven and unpleasant for the house.'},
+          {t:'"It’s just never clean enough for guests."', x:'Racks, glass, and interior. Done properly once, it’s easy to keep up.'}
+        ],
+        serviceTitle:'A proper degrease, inside and out.',
+        serviceIntro:'We break down baked-on grease and carbon on the interior, racks, and door glass. Leaving a clean oven and a kitchen you can stand in while we work.',
+        includes:['Interior walls, floor, and ceiling degreased','Racks and door glass cleaned','Eco-friendly, residue-free products','No caustic fumes in your kitchen'],
+        expect:[
+          {n:'1', t:'Kitchen stays livable', x:'No evacuation required. Our products don’t fume.'},
+          {n:'2', t:'Cook the same day', x:'No chemical residue to burn off before dinner.'},
+          {n:'3', t:'Easy add-on', x:'Pair it with carpet or upholstery cleaning in the same visit.'}
+        ],
+        related:['Tile &amp; Grout Cleaning','Carpet Cleaning','Upholstery Cleaning','Area Rug Cleaning'],
+        ctaTitle:'Cross the worst chore off the list.'
+      }
+    };
+    const name = "Carpet Cleaning";
+    const raw = D[name] || D['Carpet Cleaning'];
+    const process = [
+      {n:'01', t:'Free quote', x:'Call, email, or use the form. We confirm scope and give you a clear price. No surprises on the day.'},
+      {n:'02', t:'We come to you', x:'Van-based and mobile across the Lower Mainland. Equipment arrives with us; you just provide access.'},
+      {n:'03', t:'The deep clean', x:'Professional truck-mounted equipment and eco-friendly products, worked by hands with 35+ years of practice.'},
+      {n:'04', t:'Guaranteed for 24 hours', x:'Walk the job with us. If anything isn’t right within 24 hours, we return and make it right.'}
+    ].map((p,i)=>({...p, delay:String(i*70)}));
+    return { s: {...raw, name, process, related: raw.related.map(n=>({label:n, href:n.replace(' &amp; ',' and ')+'.dc.html'})), concerns: raw.concerns.map((c,i)=>({...c, delay:String(i*70)}))} };
+  }
+}
+</script>
+</body>
+</html>

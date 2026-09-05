@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;900&amp;family=Public+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#FFFFFF;color:#173A63;font-family:'Public Sans',system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:#1D67C9;text-decoration:none}
+a:hover{text-decoration:underline}
+input,select,textarea{font-family:'Public Sans',system-ui,sans-serif}
+</style>
+</helmet>
+<div data-header style="position:sticky;top:0;z-index:50;background:#FFFFFF;border-bottom:1px solid #D7DEE8;padding:18px 24px">
+  <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:12px 28px;flex-wrap:wrap">
+    <a href="Home.dc.html" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#0D3B7A;line-height:1.15" style-hover="text-decoration:none">
+      <img src="uploads/logo.png" alt="Flying Carpet, since 1989, owned and operated" style="height:52px;width:auto"></img>
+      <span>
+        <span style="display:block;font-family:'Archivo',sans-serif;font-weight:900;font-size:19px;letter-spacing:-0.01em">FLYING CARPET</span>
+        <span style="display:block;font-family:'Archivo',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.14em;color:#1B5FBF">&amp; FURNACE CLEANING LTD</span>
+      </span>
+    </a>
+    <nav style="display:flex;gap:20px;flex-wrap:wrap;align-items:center">
+      <a href="Home.dc.html" style="font-family:'Archivo',sans-serif;font-weight:600;font-size:15px;color:#0D3B7A;text-decoration:none;padding:4px 0" style-hover="color:#1D67C9;text-decoration:none">Home</a>
+      <a href="Services.dc.html" style="font-family:'Archivo',sans-serif;font-weight:600;font-size:15px;color:#0D3B7A;text-decoration:none;padding:4px 0" style-hover="color:#1D67C9;text-decoration:none">Services</a>
+      <a href="About.dc.html" style="font-family:'Archivo',sans-serif;font-weight:600;font-size:15px;color:#0D3B7A;text-decoration:none;padding:4px 0" style-hover="color:#1D67C9;text-decoration:none">About</a>
+      <a href="FAQ.dc.html" style="font-family:'Archivo',sans-serif;font-weight:600;font-size:15px;color:#0D3B7A;text-decoration:none;padding:4px 0" style-hover="color:#1D67C9;text-decoration:none">FAQ</a>
+      <a href="Contact.dc.html" style="font-family:'Archivo',sans-serif;font-weight:600;font-size:15px;color:#1D67C9;text-decoration:none;border-bottom:2px solid #1D67C9;padding:4px 0" style-hover="text-decoration:none">Contact</a>
+    </nav>
+    <div style="flex:1"></div>
+    <a href="Contact.dc.html" style="display:inline-block;background:#2F9E44;color:#FFFFFF;font-family:'Archivo',sans-serif;font-weight:600;font-size:15px;padding:12px 24px;border-radius:10px;text-decoration:none;transition:all .15s ease-out" style-hover="background:#278A3B;transform:translateY(-1px);box-shadow:0 8px 20px rgba(47,158,68,0.25);text-decoration:none">Get a Free Quote</a>
+  </div>
+</div>
+
+<section style="position:relative;overflow:hidden;isolation:isolate;background:radial-gradient(700px 460px at 85% 0%,rgba(29,103,201,0.55),transparent 65%),radial-gradient(500px 300px at 10% 100%,rgba(255,255,255,0.07),transparent 70%),linear-gradient(172deg,#0A2F63 0%,#0D3B7A 55%,#164C9B 100%);padding:clamp(56px,7vw,88px) 24px"><div style="position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(42% 55% at 12% 18%,rgba(29,103,201,0.50),transparent 70%),radial-gradient(38% 48% at 88% 28%,rgba(13,59,122,0.85),transparent 70%),radial-gradient(46% 60% at 70% 92%,rgba(27,95,191,0.45),transparent 70%),radial-gradient(28% 38% at 32% 78%,rgba(255,255,255,0.06),transparent 70%)"></div>
+  <div style="max-width:1200px;margin:0 auto">
+    <div data-reveal style="font-family:'Archivo',sans-serif;font-weight:600;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.75);margin-bottom:12px">Contact</div>
+    <h1 data-reveal="80" style="font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(32px,4.5vw,52px);line-height:1.08;letter-spacing:-0.02em;color:#FFFFFF;margin:0 0 16px;max-width:20ch;text-wrap:pretty">Get your free quote.</h1>
+    <p data-reveal="160" style="font-size:19px;color:rgba(255,255,255,0.9);max-width:62ch;margin:0">Call, email, or use the form. Tell us what needs cleaning and roughly where you are, and we'll give you a clear price. No obligation, no pressure.</p>
+  </div>
+</section>
+
+<section style="position:relative;overflow:hidden;isolation:isolate;background:radial-gradient(700px 420px at 92% 0%,rgba(27,95,191,0.06),transparent 70%),linear-gradient(180deg,#F3F7FC,#FBFDFF);padding:clamp(48px,7vw,96px) 24px"><div style="position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(40% 50% at 15% 20%,rgba(27,95,191,0.055),transparent 70%),radial-gradient(45% 55% at 85% 70%,rgba(29,103,201,0.045),transparent 70%),radial-gradient(35% 45% at 55% 100%,rgba(13,59,122,0.04),transparent 70%)"></div>
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:32px;align-items:start">
+    <div data-reveal style="background:#FFFFFF;border:1px solid #D7DEE8;border-radius:16px;padding:clamp(24px,4vw,48px);box-shadow:0 2px 8px rgba(13,59,122,0.06)">
+      <h2 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:24px;color:#0D3B7A;margin:0 0 8px">Request a quote</h2>
+      <p style="font-size:15px;margin:0 0 32px">We'll get back to you with a price and available times.</p>
+      <div style="display:grid;gap:20px">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px">
+          <label style="display:grid;gap:8px;font-family:'Archivo',sans-serif;font-weight:600;font-size:14px;color:#0D3B7A">Name
+            <input type="text" placeholder="Your name" style="border:1.5px solid #D7DEE8;border-radius:10px;padding:13px 16px;font-size:16px;color:#173A63;background:#FFFFFF;outline:none;transition:all .15s ease" style-focus="border-color:#1D67C9;box-shadow:0 0 0 3px rgba(29,103,201,0.12)"></input>
+          </label>
+          <label style="display:grid;gap:8px;font-family:'Archivo',sans-serif;font-weight:600;font-size:14px;color:#0D3B7A">Phone
+            <input type="tel" placeholder="604-" style="border:1.5px solid #D7DEE8;border-radius:10px;padding:13px 16px;font-size:16px;color:#173A63;background:#FFFFFF;outline:none;transition:all .15s ease" style-focus="border-color:#1D67C9;box-shadow:0 0 0 3px rgba(29,103,201,0.12)"></input>
+          </label>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px">
+          <label style="display:grid;gap:8px;font-family:'Archivo',sans-serif;font-weight:600;font-size:14px;color:#0D3B7A">Email
+            <input type="email" placeholder="you@example.com" style="border:1.5px solid #D7DEE8;border-radius:10px;padding:13px 16px;font-size:16px;color:#173A63;background:#FFFFFF;outline:none;transition:all .15s ease" style-focus="border-color:#1D67C9;box-shadow:0 0 0 3px rgba(29,103,201,0.12)"></input>
+          </label>
+          <label style="display:grid;gap:8px;font-family:'Archivo',sans-serif;font-weight:600;font-size:14px;color:#0D3B7A">City / area
+            <input type="text" placeholder="e.g. Surrey" style="border:1.5px solid #D7DEE8;border-radius:10px;padding:13px 16px;font-size:16px;color:#173A63;background:#FFFFFF;outline:none;transition:all .15s ease" style-focus="border-color:#1D67C9;box-shadow:0 0 0 3px rgba(29,103,201,0.12)"></input>
+          </label>
+        </div>
+        <label style="display:grid;gap:8px;font-family:'Archivo',sans-serif;font-weight:600;font-size:14px;color:#0D3B7A">Service needed
+          <select style="border:1.5px solid #D7DEE8;border-radius:10px;padding:13px 16px;font-size:16px;color:#173A63;background:#FFFFFF;outline:none;transition:all .15s ease;appearance:auto" style-focus="border-color:#1D67C9;box-shadow:0 0 0 3px rgba(29,103,201,0.12)">
+            <option>Carpet cleaning</option><option>Upholstery cleaning</option><option>Area rug cleaning</option><option>Tile &amp; grout cleaning</option><option>Furnace cleaning</option><option>Boiler cleaning</option><option>Duct cleaning</option><option>Dryer vent cleaning</option><option>HVAC cleaning</option><option>Oven cleaning</option><option>Multiple / not sure</option>
+          </select>
+        </label>
+        <label style="display:grid;gap:8px;font-family:'Archivo',sans-serif;font-weight:600;font-size:14px;color:#0D3B7A">Tell us about the job
+          <textarea rows="4" placeholder="e.g. 3 bedrooms + stairs, one pet stain in the living room" style="border:1.5px solid #D7DEE8;border-radius:10px;padding:13px 16px;font-size:16px;color:#173A63;background:#FFFFFF;outline:none;resize:vertical;transition:all .15s ease" style-focus="border-color:#1D67C9;box-shadow:0 0 0 3px rgba(29,103,201,0.12)"></textarea>
+        </label>
+        <div>
+          <button type="button" onClick="{{ submit }}" style="background:#2F9E44;color:#FFFFFF;font-family:'Archivo',sans-serif;font-weight:600;font-size:17px;padding:16px 32px;border-radius:10px;border:none;cursor:pointer;transition:all .15s ease-out" style-hover="background:#278A3B;transform:translateY(-1px);box-shadow:0 8px 20px rgba(47,158,68,0.25)">{{ submitLabel }}</button>
+          <p style="font-size:13px;color:#5B7395;margin:16px 0 0">Free quote · no obligation · we reply by phone or email</p>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;gap:24px">
+      <div data-reveal="100" style="background:radial-gradient(300px 200px at 90% 10%,rgba(29,103,201,0.5),transparent 70%),linear-gradient(140deg,#0D3B7A,#12488F);border:1px solid rgba(255,255,255,0.22);border-radius:16px;padding:32px;color:#FFFFFF;box-shadow:0 12px 32px rgba(13,59,122,0.16)">
+        <div style="font-family:'Archivo',sans-serif;font-weight:600;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.75);margin-bottom:8px">Fastest way</div>
+        <a href="tel:604-599-1677" style="font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(26px,3vw,34px);color:#FFFFFF;text-decoration:none;letter-spacing:-0.01em" style-hover="text-decoration:underline">604-599-1677</a>
+        <p style="font-size:15px;color:rgba(255,255,255,0.85);margin:12px 0 0">Call and talk to the owner directly. Describe the job and get a quote on the spot.</p>
+      </div>
+      <div data-reveal="180" style="background:#FFFFFF;border:1px solid #D7DEE8;border-radius:16px;padding:32px;box-shadow:0 2px 8px rgba(13,59,122,0.06)">
+        <div style="font-family:'Archivo',sans-serif;font-weight:600;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:#1B5FBF;margin-bottom:8px">Email</div>
+        <a href="mailto:flyingcarpet89@hotmail.com" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:18px;color:#0D3B7A;word-break:break-all">flyingcarpet89@hotmail.com</a>
+        <p style="font-size:15px;margin:12px 0 0">Photos help. Snap the stain, the furnace, or the room and send them along.</p>
+      </div>
+      <div data-reveal="260" style="background:#FFFFFF;border:1px solid #D7DEE8;border-radius:16px;padding:32px;box-shadow:0 2px 8px rgba(13,59,122,0.06)">
+        <div style="font-family:'Archivo',sans-serif;font-weight:600;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:#1B5FBF;margin-bottom:12px">Good to know</div>
+        <div style="display:grid;gap:12px;font-size:15px">
+          <div style="display:flex;gap:12px"><span style="flex:none;width:24px;height:24px;border-radius:999px;background:rgba(13,59,122,0.08);display:grid;place-items:center;font-size:13px;font-weight:700;color:#0D3B7A">✓</span><span>We serve the whole Lower Mainland. Van-based, we come to you</span></div>
+          <div style="display:flex;gap:12px"><span style="flex:none;width:24px;height:24px;border-radius:999px;background:rgba(13,59,122,0.08);display:grid;place-items:center;font-size:13px;font-weight:700;color:#0D3B7A">✓</span><span>Payment by cash, cheque, or e-transfer</span></div>
+          <div style="display:flex;gap:12px"><span style="flex:none;width:24px;height:24px;border-radius:999px;background:rgba(13,59,122,0.08);display:grid;place-items:center;font-size:13px;font-weight:700;color:#0D3B7A">✓</span><span>Every job backed by our 24-hour satisfaction guarantee</span></div>
+          <div style="display:flex;gap:12px"><span style="flex:none;width:24px;height:24px;border-radius:999px;background:rgba(13,59,122,0.08);display:grid;place-items:center;font-size:13px;font-weight:700;color:#0D3B7A">✓</span><span>4.9★ rating on Google</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer style="position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(165deg,#0D3B7A 0%,#0A2F63 100%);color:#FFFFFF;padding:64px 24px 0"><div style="position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(45% 55% at 80% 15%,rgba(27,95,191,0.5),transparent 70%),radial-gradient(40% 50% at 15% 90%,rgba(29,103,201,0.35),transparent 70%)"></div>
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:48px 32px;padding-bottom:48px">
+    <div>
+      <div style="font-family:'Archivo',sans-serif;font-weight:900;font-size:20px">FLYING CARPET</div>
+      <div style="font-family:'Archivo',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.14em;color:rgba(255,255,255,0.7);margin-bottom:16px">&amp; FURNACE CLEANING LTD · EST. 1989</div>
+      <p style="font-size:14px;line-height:1.6;color:rgba(255,255,255,0.8);max-width:36ch;margin:0">Independent, owner-operated carpet, upholstery, and furnace/duct cleaning across the Lower Mainland since 1989.</p>
+    </div>
+    <div>
+      <div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px">Services</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px 24px;font-size:14px">
+        <a href="Carpet Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Carpet Cleaning</a>
+        <a href="Furnace Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Furnace Cleaning</a>
+        <a href="Upholstery Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Upholstery Cleaning</a>
+        <a href="Boiler Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Boiler Cleaning</a>
+        <a href="Area Rug Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Area Rug Cleaning</a>
+        <a href="Duct Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Duct Cleaning</a>
+        <a href="Tile and Grout Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Tile &amp; Grout</a>
+        <a href="Dryer Vent Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Dryer Vent Cleaning</a>
+        <a href="Oven Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Oven Cleaning</a>
+        <a href="HVAC Cleaning.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">HVAC Cleaning</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px">Company</div>
+      <div style="display:grid;gap:8px;font-size:14px">
+        <a href="About.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">About Us</a>
+        <a href="Services.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">All Services</a>
+        <a href="FAQ.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">FAQ</a>
+        <a href="Contact.dc.html" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">Get a Free Quote</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px">Contact</div>
+      <div style="display:grid;gap:8px;font-size:14px;color:rgba(255,255,255,0.85)">
+        <a href="tel:604-599-1677" style="color:#FFFFFF;font-family:'Archivo',sans-serif;font-weight:700;font-size:17px" style-hover="color:#FFFFFF">604-599-1677</a>
+        <a href="mailto:flyingcarpet89@hotmail.com" style="color:rgba(255,255,255,0.85)" style-hover="color:#FFFFFF">flyingcarpet89@hotmail.com</a>
+        <span>Lower Mainland / Greater Vancouver, BC</span>
+        <span style="color:rgba(255,255,255,0.7)">Payment: cash · cheque · e-transfer</span>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,0.18)">
+    <div style="max-width:1200px;margin:0 auto;padding:20px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:rgba(255,255,255,0.7)">
+      <span>© 2026 Flying Carpet &amp; Furnace Cleaning Ltd. · flyingcarpet.ca</span>
+      <span>Serving the Lower Mainland since 1989 · 24-hour satisfaction guarantee</span>
+    </div>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { sent: false };
+  componentDidMount(){ import('./fx.js').then(m=>m.initFX()); }
+  renderVals(){
+    return {
+      submitLabel: this.state.sent ? '✓ Request sent. We’ll be in touch' : 'Send My Quote Request',
+      submit: () => { this.setState({sent:true}); setTimeout(()=>this.setState({sent:false}), 4000); }
+    };
+  }
+}
+</script>
+</body>
+</html>
